@@ -1,0 +1,74 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+picture {
+  display: block;
+}
+
+html {
+  font-family: $regular-font, Arial, Helvetica, sans-serif;
+  font-size: $text-base;
+}
+
+body {
+  margin: 0 auto;
+  max-width: $lg;
+
+  -webkit-overflow-scrolling: touch;
+
+
+}
+
+main {
+  margin: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: $medium-font;
+  line-height: 1.2;
+  color: inherit;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  max-width: 60ch;
+}
+
+
+a {
+  color: var(--c-orange-300);
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:focus,
+a:active {
+  //
+}
+
+
+
+img {
+  max-width: 100%;
+}
