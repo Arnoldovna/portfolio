@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: transparent;
+    padding: $s-12 0 $s-8;
+
+
+    @include tablet {}
+
+
+
+    &__icon {
+        background-color: $black;
+        mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
+        -webkit-mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
+        width: 202px;
+        height: 57px;
+        background-size: contain;
+        background-position: left center;
+        text-indent: 100%;
+        display: block;
+
+        @include tablet {
+            width: 288px;
+            height: 82px;
+
+        }
+
+    }
+
+    &__icon:hover {
+        background-color: red;
+    }
+
+    &__contact {
+
+        font-family: $medium-font;
+        font-size: $h3;
+
+        @include tablet {
+            font-size: $h2;
+
+        }
+
+        @include medium {
+            font-size: $header-point;
+
+        }
+    }
+
+}

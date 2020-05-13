@@ -1,0 +1,11 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.layout {
+    margin: 0 $s-1;
+
+    @include tablet {
+        margin: 0 $s-5;
+    }
+
+}
