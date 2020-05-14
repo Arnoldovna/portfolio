@@ -1,0 +1,77 @@
+.project-line {
+    background: $blue;
+    padding: $s-5 $s-3;
+    height: $card;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+        padding: $s-6 0 $s-3;
+        margin: 0 $s-5;
+        background: $white;
+        flex-direction: row;
+        align-items: baseline;
+        height: auto;
+        border-top: 1px solid black;
+
+    }
+
+    &__title {
+        font-size: $h2;
+
+
+        @include tablet {
+            font-size: $h1;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__subline {
+        font-size: $subline;
+        padding-top: $s-1;
+        letter-spacing: 0.02em;
+
+        @include tablet {
+            display: none;
+            font-size: $caption;
+
+        }
+    }
+
+    &__details {
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        padding-top: $s-3;
+        font-size: $paragraph-line;
+        letter-spacing: 0.05em;
+
+        @include tablet {
+            border-top: none;
+
+        }
+    }
+
+    &__category {
+        @include tablet {
+            margin-right: $s-10;
+        }
+    }
+
+}
+
+.tooltip {
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip span {
+    display: none;
+}
+
+.tooltip:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+}
