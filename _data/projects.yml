@@ -1,10 +1,10 @@
 - project: 'about'
-  img: '../assets/images/test.png'
+  img: ''
   title: 'About me'
   subline: 'Multidisciplinary Designer / Frontend Developer.'
   category: 'Marina Arnoldovna Wilgelm'
   year: '2020'
-  color: '$orange'
+  color: '#F39945'
 
 - project: 'maw-print'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -12,7 +12,7 @@
   subline: 'A portfolio of screen printed products.'
   category: 'UI Design & Development'
   year: '2020'
-  color: '$olive'
+  color: '#AD9234'
 
 - project: 'instruct'
   img: '../assets/images/test.png'
@@ -20,7 +20,7 @@
   subline: 'An instruction app to build furniture.'
   category: 'UI Design & Development'
   year: '2020'
-  color: '$blue'
+  color: '#B8D3F3'
 
 - project: 'parma'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -28,7 +28,7 @@
   subline: 'Style guide for the new Branding of Parma.'
   category: 'Frontend Development'
   year: '2019'
-  color: '$sand'
+  color: '#E1D7B5'
 
 - project: 'gruene'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -36,7 +36,7 @@
   subline: 'New Website relaunch.'
   category: 'Frontend Development'
   year: '2019'
-  color: '$orange'
+  color: '#F85D33'
 
 - project: 'schrot-korn'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -44,7 +44,7 @@
   subline: 'New Website relaunch.'
   category: 'Frontend Development'
   year: '2019-2020'
-  color: '$rose'
+  color: '#E59797'
 
 - project: 'lala'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -52,7 +52,7 @@
   subline: 'Inhouse Textile Graphic Designer for pattern powerhouse Lala Berlin.'
   category: 'Textile Graphic Design'
   year: '2017-2018'
-  color: '$skin'
+  color: '#F5B7A9'
 
 - project: 'body-loom'
   img: 'http://www.google.com/images/srpr/logo4w.png'
@@ -60,4 +60,4 @@
   subline: 'A personalized loom for zero waste textile production.'
   category: 'Product Design & Development'
   year: '2016'
-  color: '$dark-skin'
+  color: '#C36035'

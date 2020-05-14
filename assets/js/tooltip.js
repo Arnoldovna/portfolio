@@ -5,8 +5,17 @@ var lalaSpan = document.getElementById('lala');
 var parmaSpan = document.getElementById('parma');
 var schrotKornSpan = document.getElementById('schrot-korn');
 var bodyLoomSpan = document.getElementById('body-loom');
+console.log('s', screen.width);
 
 
+
+// window.onresize = function () {
+//     if (screen.width > 640) {
+//         console.log('hhhhhhhhey smller ');
+//     } else {
+//         console.log('biggger');
+//     }
+// }
 
 window.onmousemove = function (e) {
     var x = e.clientX,
@@ -25,4 +34,4 @@ window.onmousemove = function (e) {
     instructSpan.style.left = (x + 20) + 'px';
     schrotKornSpan.style.top = (y + 20) + 'px';
     schrotKornSpan.style.left = (x + 20) + 'px';
-};
+}

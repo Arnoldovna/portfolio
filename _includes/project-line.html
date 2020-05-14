@@ -1,5 +1,6 @@
 {% for project in site.data.projects %}
-<a href="/{{project.project}}" alt="{{project.project}} project" class='project-line tooltip'>
+<a href="/{{project.project}}" alt="{{project.project}} project" style="background-color:{{ project.color }};"
+    class='project-line tooltip'>
     <span id="{{project.project}}">
         <img alt="" src="{{project.img}}" />
     </span>
