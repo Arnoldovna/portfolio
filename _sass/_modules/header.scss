@@ -5,25 +5,22 @@
     background: transparent;
     padding: $s-8 $s-3 $s-6;
 
-
     @include tablet {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, #ffffff24 100%);
         padding: $s-12 $s-5 $s-8;
     }
 
-
-
     &__icon {
-        // background-color: $black;
-        // mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
-        // -webkit-mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
-        // mask-size: contain;
         background: url(../../assets/svgs/MAW.svg) no-repeat left bottom;
         width: 202px;
         height: 57px;
         background-size: contain;
         text-indent: 100%;
         display: block;
-
 
         @include tablet {
             width: 288px;
@@ -36,7 +33,6 @@
             }
         }
     }
-
 
     &__contact {
         font-family: $medium-font;
@@ -56,5 +52,4 @@
             font-size: $header-point;
         }
     }
-
 }

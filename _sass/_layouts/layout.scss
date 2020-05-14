@@ -1,11 +1,10 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-// .layout {
-//     margin: 0 $s-3;
 
-//     @include tablet {
-//         margin: 0 $s-5;
-//     }
+.layout {
 
-// }
+    display: flex;
+    flex-direction: column;
+
+}
