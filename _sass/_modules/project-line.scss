@@ -22,7 +22,6 @@
 
 
         @include tablet {
-            font-size: $h1;
             letter-spacing: 0.02em;
         }
     }
@@ -74,4 +73,5 @@
     display: block;
     position: fixed;
     overflow: hidden;
+    z-index: 100;
 }
