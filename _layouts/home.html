@@ -5,11 +5,12 @@
     <div class='layout'>
         {% include header.html %}
 
-        <h4>DEFAULT LAYOUT IS HAPPENING</h4>
+
         {{content}}
 
-        {% include footer.html %}
+        <!-- {% include footer.html %} -->
     </div>
+    <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}assets/js/tooltip.js"></script>
 </body>
 
 </html>
