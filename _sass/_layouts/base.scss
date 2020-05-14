@@ -2,13 +2,18 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
-  cursor: url(../../assets/images/cursor.png),
-    auto;
+  // cursor: url(../../assets/images/cursor.png),
+  //   auto;
+  font-weight: normal;
 }
 
 
 picture {
   display: block;
+}
+
+html {
+  height: 100%;
 }
 
 html,
@@ -19,10 +24,10 @@ body {
     sans-serif;
   font-size: $text-base;
   margin: 0 auto;
-  max-width: $lg;
-  height: 100%;
+  max-width: $xl;
   -webkit-overflow-scrolling: touch;
 }
+
 
 main {
   flex: 1 0 auto;
