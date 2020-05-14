@@ -2,6 +2,8 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
+  cursor: url(../../assets/images/cursor.png),
+    auto;
 }
 
 
@@ -9,20 +11,22 @@ picture {
   display: block;
 }
 
-html {
-  font-family: $regular-font, Arial, Helvetica, sans-serif;
-  font-size: $text-base;
-}
-
+html,
 body {
+  font-family: $regular-font,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: $text-base;
   margin: 0 auto;
   max-width: $lg;
-
+  height: 100%;
   -webkit-overflow-scrolling: touch;
-
-
 }
 
+main {
+  flex: 1 0 auto;
+}
 
 
 h1,

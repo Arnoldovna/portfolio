@@ -4,13 +4,10 @@
 <body>
     <div class='layout'>
         {% include header.html %}
-
-
         {{content}}
-
-        <!-- {% include footer.html %} -->
+        {% include footer.html %}
     </div>
-    <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}assets/js/tooltip.js"></script>
+    <script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/tooltip.js"></script>
 </body>
 
 </html>
