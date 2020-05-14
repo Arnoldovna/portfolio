@@ -6,9 +6,13 @@ permalink: /
 
 
 <main>
-  {% for project in site.pages%}
+
+  {% include project-line.html %}
+
+
+  <!-- {% for project in site.pages%}
   <li>
     <a href="{{project.url}}">{{project.title}}</a>
   </li>
-  {% endfor %}
+  {% endfor %} -->
 </main>
