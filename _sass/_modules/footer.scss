@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: $white;
+    padding: $s-8 0 $s-8;
+    margin: 0 $s-2;
+    flex-shrink: 0;
+
+    @include tablet {
+        border-top: 1px solid black;
+        margin: 0 $s-5;
+        padding: $s-10 0 $s-2;
+    }
+
+    &__imprint {
+        @include tablet {
+            &:hover {
+                @include animation('shake 0.2s cubic-bezier(.36,.07,.19,.97) both');
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+            }
+        }
+    }
+
+    &__copyright {
+        background: url(../../assets/svgs/copyright.svg) no-repeat right bottom;
+        width: 90px;
+        height: 10px;
+        background-size: contain;
+        text-indent: 100%;
+        display: block;
+
+        @include tablet {
+            width: 125px;
+            height: 17px;
+
+
+        }
+    }
+}
