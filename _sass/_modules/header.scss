@@ -3,49 +3,57 @@
     justify-content: space-between;
     align-items: baseline;
     background: transparent;
-    padding: $s-12 0 $s-8;
+    padding: $s-8 $s-3 $s-6;
 
 
-    @include tablet {}
+    @include tablet {
+        padding: $s-12 $s-5 $s-8;
+    }
 
 
 
     &__icon {
-        background-color: $black;
-        mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
-        -webkit-mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
+        // background-color: $black;
+        // mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
+        // -webkit-mask: url(../../assets/svgs/MAW.svg) no-repeat 50% 50%;
+        // mask-size: contain;
+        background: url(../../assets/svgs/MAW.svg) no-repeat left bottom;
         width: 202px;
         height: 57px;
         background-size: contain;
-        background-position: left center;
         text-indent: 100%;
         display: block;
+
 
         @include tablet {
             width: 288px;
             height: 82px;
 
+            &:hover {
+                @include animation('shake 0.2s cubic-bezier(.36,.07,.19,.97) both');
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+            }
         }
-
     }
 
-    &__icon:hover {
-        background-color: red;
-    }
 
     &__contact {
-
         font-family: $medium-font;
         font-size: $h3;
 
         @include tablet {
             font-size: $h2;
 
+            &:hover {
+                @include animation('shake 0.15s cubic-bezier(.36,.07,.19,.97) both');
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+            }
         }
 
         @include medium {
             font-size: $header-point;
-
         }
     }
 
