@@ -54,4 +54,26 @@
             font-size: $header-point;
         }
     }
+
+    &__overview {
+        font-family: $medium-font;
+        font-size: $h3;
+
+        @include tablet {
+            font-size: $h2;
+
+            &:hover {
+                @include animation('shake 0.15s cubic-bezier(.36,.07,.19,.97) both');
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+            }
+        }
+
+    }
+
+    &__overview-arrow {
+        background: url(../../assets/svgs/backwards-arrow.svg) bottom center no-repeat;
+        background-size: contain;
+        width: 31px;
+    }
 }

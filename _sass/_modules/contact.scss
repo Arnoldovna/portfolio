@@ -1,0 +1,45 @@
+.contact {
+    margin: $s-8 $s-3;
+
+    @include tablet {
+        margin: $s-16 $s-5;
+    }
+
+
+    &__contact-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contact-line {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $black;
+        padding: $s-2 0;
+        margin-bottom: $s-3;
+    }
+
+    &__arrow {
+        background-image: url(../../assets/svgs/contact-arrow.svg);
+        background-repeat: no-repeat;
+        width: 1.5em;
+        background-position: left bottom;
+        background-size: contain;
+    }
+
+    &__imprint {
+        margin: $s-10 0;
+
+        @include tablet {
+            margin: $s-16 0;
+        }
+    }
+
+    &__imprint-topic {
+
+        font-weight: normal;
+        font-family: $regular-font;
+        font-size: $caption;
+        padding-bottom: $s-3
+    }
+}
