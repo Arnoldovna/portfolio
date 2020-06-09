@@ -1,4 +1,9 @@
 <nav class='header'>
     <a class="header__icon" href="/" alt="MAW Portfolio"></a>
+    {% if page.title == 'home' %}
     <a class="header__contact" alt="contact page" href="/contact">Contact</a>
+    {% else  %}
+    <a class="header__overview" alt="contact page" href="/contact"><span class='header__overview-arrow'></span>Overview
+    </a>
+    {% endif %}
 </nav>

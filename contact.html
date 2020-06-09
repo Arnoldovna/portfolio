@@ -4,13 +4,25 @@ title: contact
 permalink: /contact/
 ---
 
-<main>
-  <section class="test">
-    <p>CONTACT </p>
-    <p>CONTACT </p>
-    <p>CONTACT </p>
-    <p>CONTACT </p>
-    <p>CONTACT </p>
-    <p>CONTACT </p>
+<main class='contact'>
+  <section class='contact__contact-list'>
+    {% for contact in site.data.contact %}
+    <a href="{{contact.url}}" alt="{{contact.contact}}" class='contact__contact-line'>
+
+      <h2 class='contact__contact-title'>
+        {{contact.contact}}
+      </h2>
+      <div class='contact__arrow'></div>
+    </a>
+    {% endfor %}
+  </section>
+
+  <section class='contact__imprint'>
+    {% for imprint in site.data.imprint %}
+    <div class='contact__imprint'>
+      <h3 class='contact__imprint-topic'>{{imprint.topic}}</h3>
+      <p class='contact__imprint-text'>{{imprint.text}}</p>
+    </div>
+    {% endfor %}
   </section>
 </main>
