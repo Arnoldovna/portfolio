@@ -26,6 +26,13 @@ url: 'http://www.mawstudio.de' # the base hostname & protocol for your site, e.g
 instagram_username: arnoldovnawilgelm
 github_username: arnoldovna
 
+exclude: ['README.md']
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Build settings
 # theme: minima
 plugins:

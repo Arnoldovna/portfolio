@@ -1,0 +1,78 @@
+.project {
+    padding: $s-5 $s-3;
+    display: flex;
+    flex-direction: column;
+
+
+
+    @include tablet {
+        padding: $s-8 0 $s-16;
+        margin: 0 $s-5;
+        flex-direction: row;
+        border-top: 1px solid $black;
+    }
+
+    &__credits {
+        display: flex;
+        flex-direction: column;
+        margin-right: $s-6;
+
+        padding-bottom: $s-5;
+
+        @include tablet {
+            flex: 1;
+        }
+
+    }
+
+    &__credits-title,
+    &__introduction-title {
+        display: none;
+
+
+        @include tablet {
+            display: block;
+            border-bottom: 1px solid $black;
+            margin-bottom: $s-5;
+            padding-bottom: $s-1;
+            font-family: $medium-font;
+            font-weight: normal;
+            font-size: $caption;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__keys {
+        padding-right: $s-5;
+        flex-grow: 1;
+        width: 50%
+    }
+
+    &__values {
+        font-family: $medium-font;
+        flex-grow: 1;
+        width: 50%
+    }
+
+
+    &__keys:after {
+        content: ': '
+    }
+
+    &__introduction {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex: 3;
+        }
+    }
+
+
+
+
+}

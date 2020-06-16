@@ -14,12 +14,11 @@
         align-items: baseline;
         height: auto;
         border-top: 1px solid black;
-
     }
 
     &__title {
         font-size: $h2;
-
+        font-weight: normal;
 
         @include tablet {
             letter-spacing: 0.02em;
@@ -84,6 +83,22 @@
 .tooltip span {
     display: none;
 }
+
+#maw-print,
+#about,
+#lala-berlin,
+#schrot-korn,
+#gruene,
+#instruct,
+#body-loom,
+#parma {
+    visibility: hidden;
+
+    @include tablet {
+        visibility: visible;
+    }
+}
+
 
 .tooltip:hover span {
     display: block;

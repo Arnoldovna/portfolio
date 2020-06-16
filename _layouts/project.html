@@ -1,0 +1,53 @@
+---
+layout: home
+---
+
+<section class='project-line'>
+    <div class='project-line__header'>
+        <h2 class='project-line__title'>
+            {{ page.title}}
+        </h2>
+        <p class='project-line__subline'>{{page.subline}}</p>
+    </div>
+    <div class='project-line__details'>
+        <p class='project-line__category'>{{page.category}}</p>
+        <p class='project-line__year'>{{page.year}}</p>
+    </div>
+</section>
+
+<section class='project'>
+    <div class='project__credits'>
+        <h3 class='project__credits-title'>credits</h3>
+        <div class='project__details'>
+            <div class='project__keys'>Team</div>
+            <div class='project__values'>{{page.team}}</div>
+            <div class='project__keys'>Year</div>
+            <div class='project__values'>{{page.year}}</div>
+            <div class='project__keys'>Client</div>
+            <div class='project__values'>{{page.client}}</div>
+            <div class='project__keys'>Tech stack</div>
+            <div class='project__values'>{{page.stack}}</div>
+        </div>
+    </div>
+    <div class='project__introduction'>
+        <h3 class='project__introduction-title'>introduction</h3>
+        <p class='project__introduction-text'>
+            {{page.description}} </p>
+    </div>
+</section>
+<section class='tab'>
+    <div class='tab__frame'>
+        <div class='tab__nav'>
+            <div class='tab__dots'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class='tab__video-container'>
+            <iframe src="{{page.video}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
+        </div>
+    </div>
+</section>
