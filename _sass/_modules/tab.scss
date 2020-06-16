@@ -1,0 +1,91 @@
+.tab {
+    margin: $s-5;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        margin: 0;
+        padding-bottom: $s-20;
+    }
+
+    &__frame {
+        overflow: hidden;
+        font-size: 0;
+        line-height: 1;
+        width: 100%;
+
+        @include tablet {
+            box-shadow: 0 0 18px -3px rgba(0, 0, 0, .42);
+            margin: $s-5;
+            border-radius: 3px;
+            overflow: hidden;
+
+            width: 85%;
+            height: auto;
+        }
+
+        @include desktop {
+
+            max-width: 75%;
+
+        }
+    }
+
+    &__nav {
+        display: block;
+        font-size: 1rem;
+        position: relative;
+        height: 1.7em;
+        width: 100%;
+        background-image: linear-gradient(-180deg, #e6e6e6, #cfcfcf);
+
+        @include tablet {
+            height: 2.1em;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        top: .3em;
+        left: .7em;
+
+        @include tablet {
+            top: .4em;
+        }
+    }
+
+    &__dots span {
+        display: inline-block;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, .3);
+        margin: .3em;
+        height: 0.65em;
+        width: 0.65em;
+
+        @include tablet {
+            width: .75em;
+            height: .75em;
+        }
+    }
+
+    &__video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    &__video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .player .vp-title {
+        visibility: hidden;
+    }
+}
