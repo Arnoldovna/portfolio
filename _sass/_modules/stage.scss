@@ -1,0 +1,30 @@
+// .stage {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+
+//     z-index: 10000;
+//     background: url(../../assets/svgs/MAW.svg) no-repeat center center white;
+//     background-size: 50%;
+//     background-position: center center;
+
+
+
+//     @include animation('pop 1.3s cubic-bezier(.36,.07,.19,.97) both');
+//     @include animation('fade 1s linear both');
+
+// &:before {
+//     background: white;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+//     background: white;
+//     z-index: 9999;
+// }
+// }

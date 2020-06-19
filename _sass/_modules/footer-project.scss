@@ -1,0 +1,53 @@
+.footer-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: $white;
+    padding: $s-6 0 $s-8;
+    margin: $s-16 $s-2 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-top: 1px solid $grey-underline;
+
+    @include tablet {
+        margin: 0 $s-5;
+        padding: 0 0 $s-6;
+    }
+
+    &__channels {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include tablet {
+            width: 60%;
+        }
+    }
+
+    .shake {
+        font-family: $medium-font;
+        font-size: $footer-point;
+        font-weight: normal;
+
+        @include tablet {
+
+            &:hover {
+                @include animation('shake 0.2s cubic-bezier(.36,.07,.19,.97) both');
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+            }
+        }
+
+    }
+
+    &__copyright {
+        background: url(../../assets/svgs/copyright.svg) no-repeat right bottom;
+        width: 125px;
+        height: 17px;
+        background-size: contain;
+        text-indent: 100%;
+        display: block;
+        padding-top: $s-12;
+    }
+}
