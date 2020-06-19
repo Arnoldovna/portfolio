@@ -10,7 +10,7 @@
     @include tablet {
         border-top: 1px solid $grey-underline;
         margin: 0 $s-5;
-        padding: $s-10 0 $s-2;
+        padding: $s-6 0;
     }
 
     &__imprint {
@@ -34,8 +34,6 @@
         @include tablet {
             width: 125px;
             height: 17px;
-
-
         }
     }
 }
