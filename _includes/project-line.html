@@ -1,7 +1,8 @@
 {% assign projects = site.projects | sort: 'n' %}
 {% for project in projects %}
 <a href="{{site.baseurl}}/projects/{{project.project}}" alt="{{project.project}} project"
-    style="background-color:{{ project.color }};" class='project-line tooltip'>
+    style="background-color:{{ project.color }};" class='project-line tooltip hook' data-aos="fade-in"
+    data-aos-delay='200'>
     <span id="{{project.project}}">
         <img alt="" src="{{project.img}}" />
     </span>

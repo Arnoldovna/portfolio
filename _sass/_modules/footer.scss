@@ -8,7 +8,7 @@
     flex-shrink: 0;
 
     @include tablet {
-        border-top: 1px solid black;
+        border-top: 1px solid $grey-underline;
         margin: 0 $s-5;
         padding: $s-10 0 $s-2;
     }

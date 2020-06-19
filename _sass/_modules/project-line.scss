@@ -1,5 +1,4 @@
 .project-line {
-    background: $blue;
     padding: $s-5 $s-3;
     height: $card;
     display: flex;
@@ -13,16 +12,38 @@
         flex-direction: row;
         align-items: baseline;
         height: auto;
-        border-top: 1px solid black;
+
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            background-color: $grey-hover;
+            left: 0;
+            position: absolute;
+
+        }
+
+        &:hover:after {
+            // height: 2px;
+            background-color: $black;
+        }
+
     }
+
+
 
     &__title {
         font-size: $h2;
         font-weight: normal;
 
+
         @include tablet {
             letter-spacing: 0.02em;
             font-size: $h4;
+
+
         }
 
         @include medium {
@@ -33,9 +54,9 @@
     }
 
     &__subline {
-        font-size: $subline;
-        padding-top: $s-1;
-        letter-spacing: 0.02em;
+        font-size: 15px;
+        padding-top: $s-2;
+        letter-spacing: 0.015em;
 
         @include tablet {
             display: none;
@@ -45,7 +66,7 @@
     }
 
     &__details {
-        border-top: 1px solid black;
+        border-top: 1px solid $grey-hover;
         display: flex;
         justify-content: space-between;
         padding-top: $s-3;
@@ -73,6 +94,31 @@
         }
     }
 
+    &__projectPage {
+        padding: $s-5 $s-3;
+        // height: 150px;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include tablet {
+            padding: $s-6 0 $s-3;
+            margin: 0 $s-5;
+            background: $white !important;
+            flex-direction: row;
+            align-items: flex-end;
+            height: auto;
+            min-height: auto;
+            border-top: 1px solid $grey-underline;
+        }
+    }
+
+    &__projectPage-subline {
+        font-size: 15px;
+        padding-top: $s-2;
+        letter-spacing: 0.015em;
+    }
 }
 
 .tooltip {

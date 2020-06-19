@@ -21,7 +21,6 @@
         width: 202px;
         height: 57px;
         background-size: contain;
-        text-indent: 100%;
         display: block;
 
         @include tablet {
@@ -56,8 +55,9 @@
     }
 
     &__overview {
-        font-family: $medium-font;
-        font-size: $h3;
+
+        position: relative;
+
 
         @include tablet {
             font-size: $h2;
@@ -68,12 +68,30 @@
                 backface-visibility: hidden;
             }
         }
-
     }
 
+    &__overview-text {
+        display: none;
+
+        @include tablet {
+            display: inline-block;
+            font-size: $h2;
+            font-family: $medium-font;
+        }
+    }
+
+
+
     &__overview-arrow {
-        background: url(../../assets/svgs/backwards-arrow.svg) bottom center no-repeat;
-        background-size: contain;
-        width: 31px;
+        content: url(../../assets/svgs/backwards-arrow.svg);
+        position: relative;
+        bottom: 10px;
+        width: 3em;
+        left: 0;
+
+        @include tablet {
+            width: 1.3em;
+            top: 2px;
+        }
     }
 }

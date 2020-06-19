@@ -2,15 +2,23 @@
 {% include head.html %}
 
 <body>
+
     <div class='layout'>
         {% include header.html %}
         {{content}}
         {% include footer.html %}
     </div>
     {% if page.title =='home' %}
-    <script class='script-mobile' type="text/javascript"
-        src="{{ base.url | prepend: site.url }}/assets/js/tooltip.js"></script>
+    <script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/tooltip.js"></script>
     {% endif %}
+
+    {% if page.title !='project' %}
+    <script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/transitions.js"></script>
+    {% endif %}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

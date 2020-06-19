@@ -12,5 +12,5 @@ team: solo
 client: personal project
 stack: Adobe Suite, Figma
 description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat a quibusdam eligendi id fuga non labore laboriosam tenetur repellat accusantium doloribus harum accusamus aperiam, eum reprehenderit, magni itaque incidunt odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat a quibusdam eligendi id fuga non labore laboriosam tenetur repellat accusantium doloribus harum accusamus aperiam, eum reprehenderit, magni itaque incidunt odio!'
-video: 'https://player.vimeo.com/video/430283923?title=0&byline=0&portrait=0&sidedock=0'
+video: 'https://player.vimeo.com/video/430283923?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
 ---
