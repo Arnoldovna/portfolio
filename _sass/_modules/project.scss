@@ -1,23 +1,20 @@
 .project {
-    padding: $s-5 $s-3;
+    padding: $s-8 $s-3 $s-12;
     display: flex;
     flex-direction: column;
-
-
 
     @include tablet {
         padding: $s-8 0 $s-16;
         margin: 0 $s-5;
         flex-direction: row;
-        border-top: 1px solid $black;
+        border-top: 1px solid $grey-underline;
     }
 
     &__credits {
         display: flex;
         flex-direction: column;
         margin-right: $s-6;
-
-        padding-bottom: $s-5;
+        padding-bottom: $s-6;
 
         @include tablet {
             flex: 1;
@@ -32,7 +29,7 @@
 
         @include tablet {
             display: block;
-            border-bottom: 1px solid $black;
+            border-bottom: 1px solid $grey-underline;
             margin-bottom: $s-5;
             padding-bottom: $s-1;
             font-family: $medium-font;
@@ -49,7 +46,8 @@
     &__keys {
         padding-right: $s-5;
         flex-grow: 1;
-        width: 50%
+        width: 50%;
+
     }
 
     &__values {
@@ -71,8 +69,4 @@
             flex: 3;
         }
     }
-
-
-
-
 }

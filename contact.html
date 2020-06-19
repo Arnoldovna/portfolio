@@ -4,10 +4,11 @@ title: contact
 permalink: /contact/
 ---
 
-<main class='contact'>
+<main class='contact' data-barba="container" data-barba-namespace="contact">
   <section class='contact__contact-list'>
     {% for contact in site.data.contact %}
-    <a href="{{contact.url}}" alt="{{contact.contact}}" class='contact__contact-line'>
+    <a href="{{contact.url}}" alt="{{contact.contact}}" class='contact__contact-line hook' data-aos-delay='200'
+      data-aos="fade-in">
 
       <h2 class='contact__contact-title'>
         {{contact.contact}}
@@ -19,7 +20,7 @@ permalink: /contact/
 
   <section class='contact__imprint'>
     {% for imprint in site.data.imprint %}
-    <div class='contact__imprint'>
+    <div class='contact__imprint hook' data-aos="fade-in" data-aos-delay='200'>
       <h3 class='contact__imprint-topic'>{{imprint.topic}}</h3>
       <p class='contact__imprint-text'>{{imprint.text}}</p>
     </div>

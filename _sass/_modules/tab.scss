@@ -20,11 +20,11 @@
             width: 85%;
         }
 
-        @include desktop {
-
-            max-width: 71%;
-
+        @include medium {
+            width: 71%;
         }
+
+
     }
 
     &__nav {

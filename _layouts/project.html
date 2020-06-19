@@ -2,12 +2,13 @@
 layout: home
 ---
 
-<section class='project-line'>
-    <div class='project-line__header'>
-        <h2 class='project-line__title'>
+<section class='project-line__projectPage' data-aos="fade-in" data-aos-delay="50"
+    style="background-color:{{ page.color }};">
+    <div class='project-line__projectPage-header'>
+        <h2 class='project-line__projectPage-title'>
             {{ page.title}}
         </h2>
-        <p class='project-line__subline'>{{page.subline}}</p>
+        <p class='project-line__projectPage-subline'>{{page.subline}}</p>
     </div>
     <div class='project-line__details'>
         <p class='project-line__category'>{{page.category}}</p>
@@ -15,8 +16,8 @@ layout: home
     </div>
 </section>
 
-<section class='project'>
-    <div class='project__credits'>
+<section class='project' data-aos="fade-in" data-aos-delay="100">
+    <div data-aos="fade-right" data-aos-delay="100" class='project__credits'>
         <h3 class='project__credits-title'>credits</h3>
         <div class='project__details'>
             <div class='project__keys'>Team</div>
@@ -29,14 +30,14 @@ layout: home
             <div class='project__values'>{{page.stack}}</div>
         </div>
     </div>
-    <div class='project__introduction'>
+    <div data-aos="fade-left" data-aos-delay="200" class='project__introduction'>
         <h3 class='project__introduction-title'>introduction</h3>
         <p class='project__introduction-text'>
             {{page.description}} </p>
     </div>
 </section>
 <section class='tab'>
-    <div class='tab__frame'>
+    <div class='tab__frame' data-aos="fade-up" data-aos-delay="300">
         <div class='tab__nav'>
             <div class='tab__dots'>
                 <span></span>
@@ -46,8 +47,6 @@ layout: home
         </div>
         <div class='tab__video-container'>
             <iframe src="{{page.video}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
         </div>
     </div>
 </section>

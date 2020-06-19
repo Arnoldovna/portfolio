@@ -3,7 +3,10 @@
     {% if page.title == 'home' %}
     <a class="header__contact" alt="contact page" href="/contact">Contact</a>
     {% else  %}
-    <a class="header__overview" alt="contact page" href="/contact"><span class='header__overview-arrow'></span>Overview
+    <a class="header__overview" alt="overview page" href="/">
+        <span class='header__overview-arrow'></span>
+        <span class='header__overview-text'>Overview</span>
+
     </a>
     {% endif %}
 </nav>
