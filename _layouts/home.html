@@ -6,7 +6,11 @@
     <div class='layout'>
         {% include header.html %}
         {{content}}
+        {% if page.permalink: == '/' or page.permalink: == '/contact'%}
         {% include footer.html %}
+        {% else %}
+        {% include footer-project.html %}
+        {% endif %}
     </div>
     {% if page.title =='home' %}
     <script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/tooltip.js"></script>
