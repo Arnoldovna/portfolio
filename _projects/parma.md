@@ -2,11 +2,15 @@
 layout: project
 n: 5
 project: 'parma'
-img: 'http://www.google.com/images/srpr/logo4w.png'
+img: '../assets/images/parma.png'
 title: 'Parma 2020 Styleguide'
-subline: 'Style guide for the new Branding of Parma.'
+subline: 'An interactive style guide for the new branding of the city Parma.'
 category: 'Frontend Development'
 year: '2019'
 color: '#E1D7B5'
-description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat a quibusdam eligendi id fuga non labore laboriosam tenetur repellat accusantium doloribus harum accusamus aperiam, eum reprehenderit, magni itaque incidunt odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat a quibusdam eligendi id fuga non labore laboriosam tenetur repellat accusantium doloribus harum accusamus aperiam, eum reprehenderit, magni itaque incidunt odio!'
+team: 'sole developer, <a href="https://www.edenspiekermann.com/eu/" alt="Edenspiekermann">Edenspiekermann</a>'
+website: 'comping soon'
+stack: eleventy, javascript, css
+description: 'I was asked to produce a digital style guide for the branding relaunch of the city of Parma to make the visual language and guidelines transparent and accessible.'
+video: 'https://player.vimeo.com/video/430283923?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
 ---

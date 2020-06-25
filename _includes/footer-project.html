@@ -1,8 +1,17 @@
 <footer class="footer-project">
     <div class='footer-project__channels'>
 
-        <a href="/projects/about/" alt="about" class="footer-project__about shake">about</a>
         <a href="/contact" alt="imprint" class="footer-project__imprint shake">imprint</a>
+
+        {% if page.project == 'about' %}
+
+        <a href="https://www.instagram.com/arnoldovnawilgelm/" alt="instagram"
+            class="footer-project__about shake">instagram</a>
+
+        {% else %}
+
+        <a href="/projects/about/" alt="about" class="footer-project__about shake">about</a>
+        {% endif %}
         <a href="https://www.linkedin.com/in/marina-wilhelm/" alt="linkedin"
             class="footer-project__linkedin shake">linkedin</a>
         <a href="https://github.com/Arnoldovna" alt="github" class="footer-project__github shake">github</a>

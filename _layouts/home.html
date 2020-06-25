@@ -2,11 +2,10 @@
 {% include head.html %}
 
 <body>
-
     <div class='layout'>
         {% include header.html %}
         {{content}}
-        {% if page.permalink: == '/' or page.permalink: == '/contact'%}
+        {% if page.permalink == '/' or page.permalink == '/contact'%}
         {% include footer.html %}
         {% else %}
         {% include footer-project.html %}
