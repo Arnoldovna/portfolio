@@ -1,53 +1,64 @@
 ---
 layout: home
-title: project
+title: projects
+permalink: /projects/
 ---
-
-<section class='project-line__projectPage' data-aos="fade-in" data-aos-delay="50"
-    style="background-color:{{ page.color }};">
-    <div class='project-line__projectPage-header'>
-        <h2 class='project-line__projectPage-title'>
-            {{ page.title}}
-        </h2>
-        <p class='project-line__projectPage-subline'>{{page.subline}}</p>
-    </div>
-    <div class='project-line__details'>
-        <p class='project-line__category'>{{page.category}}</p>
-        <p class='project-line__year'>{{page.year}}</p>
-    </div>
-</section>
-
-<section class='project' data-aos="fade-in" data-aos-delay="100">
-    <div data-aos="fade-right" data-aos-delay="100" class='project__credits'>
-        <h3 class='project__credits-title'>credits</h3>
-        <div class='project__details'>
-            <div class='project__keys'>Team</div>
-            <div class='project__values'>{{page.team}}</div>
-            <div class='project__keys'>Year</div>
-            <div class='project__values'>{{page.year}}</div>
-            <div class='project__keys'>Client</div>
-            <div class='project__values'>{{page.client}}</div>
-            <div class='project__keys'>Tech stack</div>
-            <div class='project__values'>{{page.stack}}</div>
+<main>
+    <section class='project-line__projectPage' data-aos="fade-in" data-aos-delay="50"
+        style="background-color:{{ page.color }};">
+        <div class='project-line__projectPage-header'>
+            <h2 class='project-line__projectPage-title'>
+                {{ page.title}}
+            </h2>
+            <p class='project-line__projectPage-subline'>{{page.subline}} </p>
         </div>
-    </div>
-    <div data-aos="fade-left" data-aos-delay="200" class='project__introduction'>
-        <h3 class='project__introduction-title'>introduction</h3>
-        <p class='project__introduction-text'>
-            {{page.description}} </p>
-    </div>
-</section>
-<section class='tab'>
-    <div class='tab__frame' data-aos="fade-up" data-aos-delay="300">
-        <div class='tab__nav'>
-            <div class='tab__dots'>
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class='project-line__details'>
+            <p class='project-line__category'>{{page.category}}</p>
+            <p class='project-line__year'>{{page.year}}</p>
+        </div>
+    </section>
+
+    <section class='project' data-aos="fade-in" data-aos-delay="100">
+        <div data-aos="fade-right" data-aos-delay="100"
+            class='{% if page.credits == false %} project__no-display {% else %} project__credits {% endif %}'>
+            <h3 class='project__credits-title'>credits</h3>
+            <div class='project__details'>
+                {% if page.team %}
+                <div class='project__keys'>Team</div>
+                <div class='project__values'>{{page.team}}</div>
+                {% endif %}
+                {% if page.type %}
+                <div class='project__keys'>Project</div>
+                <div class='project__values'>{{page.type}}</div>
+                {% endif %}
+                {% if page.stack %}
+                <div class='project__keys'>Tech stack</div>
+                <div class='project__values'>{{page.stack}}</div>
+                {% endif %}
+                {% if page.website %}
+                <div class='project__keys'>Website</div>
+                <div class='project__values'>{{page.website}}</div>
+                {% endif %}
             </div>
         </div>
-        <div class='tab__video-container'>
-            <iframe src="{{page.video}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div data-aos="fade-left" data-aos-delay="200" class='project__introduction'>
+            <h3 class='project__introduction-title'>introductions</h3>
+            <p class='project__introduction-text'>
+                {{page.description}} </p>
         </div>
-    </div>
-</section>
+    </section>
+    <section class='{% if page.video == false %} project__no-display {% else %} tab {% endif %}'>
+        <div class='tab__frame' data-aos="fade-up" data-aos-delay="300">
+            <div class='tab__nav'>
+                <div class='tab__dots'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class='tab__video-container'>
+                <iframe src="{{page.video}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</main>

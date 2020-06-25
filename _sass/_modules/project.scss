@@ -18,8 +18,13 @@
 
         @include tablet {
             flex: 1;
+            min-width: 315px;
         }
 
+    }
+
+    &__no-display {
+        display: none;
     }
 
     &__credits-title,
@@ -53,7 +58,12 @@
     &__values {
         font-family: $medium-font;
         flex-grow: 1;
-        width: 50%
+
+        width: 50%;
+
+        a:hover {
+            color: $grey-hover
+        }
     }
 
 
@@ -67,6 +77,17 @@
 
         @include tablet {
             flex: 3;
+        }
+    }
+
+    &__introduction-text {
+        a {
+            font-family: $medium-font;
+
+        }
+
+        a:hover {
+            color: $grey-hover
         }
     }
 }

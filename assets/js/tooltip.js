@@ -1,6 +1,6 @@
 var mawPrintSpan = document.getElementById('maw-print');
 var aboutSpan = document.getElementById('about');
-var instructSpan = document.getElementById('instruct');
+// var instructSpan = document.getElementById('instruct');
 var grueneSpan = document.getElementById('gruene');
 var lalaSpan = document.getElementById('lala-berlin');
 var parmaSpan = document.getElementById('parma');
@@ -16,14 +16,14 @@ window.onmousemove = function (e) {
     mawPrintSpan.style.left = (x + 20) + 'px';
     grueneSpan.style.top = (y - 150) + 'px';
     grueneSpan.style.left = (x + 20) + 'px';
-    lalaSpan.style.top = (y - 150) + 'px';
+    lalaSpan.style.top = (y - 400) + 'px';
     lalaSpan.style.left = (x + 20) + 'px';
     parmaSpan.style.top = (y - 150) + 'px';
     parmaSpan.style.left = (x + 20) + 'px';
-    bodyLoomSpan.style.top = (y - 150) + 'px';
+    bodyLoomSpan.style.top = (y - 400) + 'px';
     bodyLoomSpan.style.left = (x + 20) + 'px';
-    instructSpan.style.top = (y - 150) + 'px';
-    instructSpan.style.left = (x + 20) + 'px';
+    // instructSpan.style.top = (y - 150) + 'px';
+    // instructSpan.style.left = (x + 20) + 'px';
     schrotKornSpan.style.top = (y - 150) + 'px';
     schrotKornSpan.style.left = (x + 20) + 'px';
 };
