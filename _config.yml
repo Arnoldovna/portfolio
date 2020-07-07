@@ -21,7 +21,8 @@
 title: MAW Portfolio
 email: marina.wilhelm@icloud.com
 description: Ui Design and Frontend Development portfolio by Marina Arnoldovna Wilgelm
-url: 'https://www.maw-studio.de' # the base hostname & protocol for your site, e.g. http://example.com
+# url: 'https://www.maw-studio.de' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/portfolio'
 instagram_username: arnoldovnawilgelm
 github_username: arnoldovna
 
@@ -33,7 +34,7 @@ collections:
     permalink: /projects/:path/
 
 # Build settings
-# theme: minima
+
 plugins:
   - jekyll-feed
 
