@@ -7,9 +7,9 @@
     <meta name="robots" content="index, follow" />
     <meta name="google" content="notranslate">
     <title>{% if title %} {{ title }} {% else %} {{ site.title }} {% endif %}</title>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <!-- <link rel="canonical" href="{{ site.url }}{{ page.url }}" /> -->
+    <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico" />
     <link rel="author" href="{{ site.url }}" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
 </head>
