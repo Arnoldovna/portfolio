@@ -2,7 +2,7 @@
 layout: project
 n: 8
 project: 'body-loom'
-img: '../assets/images/body1.png'
+img: '/assets/images/body1.png'
 title: 'Body Loom System'
 subline: 'A personalized loom for zero waste textile production.'
 category: 'Product Design & Development'

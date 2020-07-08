@@ -2,7 +2,7 @@
 layout: project
 n: 7
 project: 'lala-berlin'
-img: '../assets/images/lala.png'
+img: '/assets/images/lala.png'
 title: 'lala Berlin'
 subline: 'Inhouse Textile Graphic Designer for pattern powerhouse Lala Berlin.'
 category: 'Textile Graphic Design'
