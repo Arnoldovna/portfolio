@@ -2,7 +2,7 @@
 layout: project
 n: 4
 project: 'schrot-korn'
-img: '../assets/images/schrotkorn.png'
+img: '/assets/images/schrotkorn.png'
 title: 'Schrot & Korn'
 subline: 'New Website relaunch.'
 category: 'Frontend Development'

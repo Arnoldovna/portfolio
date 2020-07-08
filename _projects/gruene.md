@@ -2,7 +2,7 @@
 layout: project
 n: 6
 project: 'gruene'
-img: '../assets/images/gruene.png'
+img: '/assets/images/gruene.png'
 title: 'Die Grünen / Bündnis `90'
 subline: 'New Website relaunch.'
 category: 'Frontend Development'

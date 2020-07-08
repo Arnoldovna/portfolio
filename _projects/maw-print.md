@@ -2,7 +2,7 @@
 layout: project
 n: 3
 project: 'maw-print'
-img: '../assets/images/maw-print.png'
+img: '/assets/images/maw-print.png'
 title: 'maw prints'
 subline: 'A portfolio of screen printed products.'
 category: 'UI Design & Development'

@@ -2,7 +2,7 @@
 layout: project
 n: 5
 project: 'parma'
-img: '../assets/images/parma.png'
+img: '/assets/images/parma.png'
 title: 'Parma 2020 Styleguide'
 subline: 'An interactive style guide for the new branding of the city Parma.'
 category: 'Frontend Development'
