@@ -4,7 +4,7 @@
     style="background-color:{{ project.color }};" class='project-line tooltip hook' data-aos="fade-in"
     data-aos-delay='200'>
     <span id="{{project.project}}">
-        <img alt="" src="{{{{site.baseurl}}/{{project.img}}" />
+        <img alt="" src="{{{{site.baseurl| prepend: site.url }}{{project.img}}" />
     </span>
     <div class='project-line__header'>
         <h2 class='project-line__title'>
