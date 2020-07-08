@@ -1,9 +1,9 @@
 <nav class='header'>
-    <a class="header__icon" href="/" alt="MAW Portfolio"></a>
+    <a class="header__icon" href="{{site.baseurl}}/" alt="MAW Portfolio"></a>
     {% if page.title == 'home' %}
-    <a class="header__contact" alt="contact page" href="/contact">Contact</a>
+    <a class="header__contact" alt="contact page" href="{{site.baseurl}}/contact">Contact</a>
     {% else  %}
-    <a class="header__overview" alt="overview page" href="/">
+    <a class="header__overview" alt="overview page" href="{{site.baseurl}}/">
         <span class='header__overview-arrow'></span>
         <span class='header__overview-text'>Overview</span>
 
