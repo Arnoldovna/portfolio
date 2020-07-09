@@ -4,11 +4,11 @@ title: contact
 permalink: /contact/
 ---
 
-<main class='contact' data-barba="container" data-barba-namespace="contact">
+<main class='contact'>
   <section class='contact__contact-list'>
     {% for contact in site.data.contact %}
     <a href="{{contact.url}}" alt="{{contact.contact}}" class='contact__contact-line hook' data-aos-delay='200'
-      data-aos="fade-in">
+      data-aos="fade-in" data-aos-anchor-placement="top-bottom">
 
       <h2 class='contact__contact-title'>
         {{contact.contact}}

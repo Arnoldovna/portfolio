@@ -2,8 +2,8 @@
 layout: project
 n: 1
 credits: false
+img: '/assets/images/see.png'
 project: 'about'
-img: ''
 title: 'About me'
 subline: 'Multidisciplinary Designer / Frontend Developer.'
 category: 'Marina Arnoldovna Wilgelm'
