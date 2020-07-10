@@ -15,5 +15,5 @@ description: '„Fast, fast, fast, cheap, cheap, cheap, now, now, now“ – the
 The central objective was to develop an apparatus, which is comparable to a loom, and enables the seamless weaving of a three-dimensional form in one piece.
 As the garment is fully manufactured in one stage, there is no need for cutting and sewing. A one hundred percent Zero-Waste-Product is produced, which perfectly fits the given body shape.
 The actual product is the three-dimensional loom, which can be ordered via an online system, and arrives as a DIY assembly kit, pre-fabricated to one’s individual body dimensions. It is a kind of tool which is generated virtually, and combines new technology with an ancient textile craft.'
-video: 'https://player.vimeo.com/video/430721242?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
+video: 'https://player.vimeo.com/video/437143895?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
 ---
