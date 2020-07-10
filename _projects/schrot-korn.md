@@ -13,5 +13,5 @@ color: '#E59797'
 team: '<a href="https://www.edenspiekermann.com/eu/" alt="Edenspiekermann">Edenspiekermann</a>'
 stack: craft cms, react, gatsby, graphql, tailwind, scss
 description: 'Edenspiekermann developed the digital relaunch of Schrot & Korn and BioHandel magazines, Germany’s biggest bio-focussed publications for B2C and B2B respectively. Our Team redesigned and developed the structure and visual language of the website to simplify access to important information. I supported the frontend development team by building components with react, tailwind and scss.'
-video: 'https://player.vimeo.com/video/430721242?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
+video: 'https://player.vimeo.com/video/437153801?title=0&byline=0&portrait=0&sidedock=0&autoplay=1&loop=1'
 ---
