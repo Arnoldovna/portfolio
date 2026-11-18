@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 5
+n: 7
 project: 'parma'
 img: '/assets/images/parma.png'
 title: 'Parma 2020 Styleguide'
@@ -8,7 +8,7 @@ subline: 'An interactive style guide for the new branding of the city Parma.'
 category: 'Frontend Development'
 year: '2019'
 color: '#E1D7B5'
-team: 'sole developer, <a href="https://www.edenspiekermann.com/eu/" alt="Edenspiekermann">Edenspiekermann</a>'
+team: 'sole developer, <a href="https://www.edenspiekermann.com/eu/" rel="noopener noreferrer">Edenspiekermann</a>'
 website: 'coming soon'
 stack: eleventy, javascript, css
 description: 'I was asked to produce a digital style guide for the branding relaunch of the city of Parma to make the visual language and guidelines transparent and accessible.'

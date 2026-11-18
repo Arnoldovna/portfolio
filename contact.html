@@ -4,25 +4,26 @@ title: contact
 permalink: /contact/
 ---
 
-<main class='contact'>
-  <section class='contact__contact-list'>
+<main id="main" class='contact'>
+  <h1 class="visually-hidden">Contact and imprint</h1>
+  <section class='contact__contact-list' aria-label="Contact">
     {% for contact in site.data.contact %}
-    <a href="{{contact.url}}" alt="{{contact.contact}}" class='contact__contact-line hook' data-aos-delay='200'
+    <a href="{{ contact.url }}"{% unless contact.url contains 'mailto:' %} rel="noopener noreferrer"{% endunless %} class='contact__contact-line hook' data-aos-delay='200'
       data-aos="fade-in" data-aos-anchor-placement="top-bottom">
 
       <h2 class='contact__contact-title'>
-        {{contact.contact}}
+        {{ contact.contact }}
       </h2>
-      <div class='contact__arrow'></div>
+      <div class='contact__arrow' aria-hidden="true"></div>
     </a>
     {% endfor %}
   </section>
 
-  <section class='contact__imprint'>
+  <section class='contact__imprint' aria-label="Imprint">
     {% for imprint in site.data.imprint %}
     <div class='contact__imprint hook' data-aos="fade-in" data-aos-delay='200' data-aos-anchor-placement="top-bottom">
-      <h3 class='contact__imprint-topic'>{{imprint.topic}}</h3>
-      <p class='contact__imprint-text'>{{imprint.text}}</p>
+      <h3 class='contact__imprint-topic'>{{ imprint.topic }}</h3>
+      <p class='contact__imprint-text'>{{ imprint.text }}{% if imprint.signed %} maw {{ site.time | date: '%Y' }}{% endif %}</p>
     </div>
     {% endfor %}
   </section>
