@@ -1,21 +1,16 @@
 <footer class="footer-project">
     <div class='footer-project__channels'>
-
-        <a href="{{site.baseurl}}/contact" alt="imprint" class="footer-project__imprint shake">imprint</a>
-
+        <a href="{{ '/contact/' | relative_url }}" class="footer-project__imprint shake">imprint</a>
         {% if page.project == 'about' %}
-
-        <a href="https://www.instagram.com/arnoldovnawilgelm/" alt="instagram"
+        <a href="https://www.instagram.com/arnoldovnawilgelm/" rel="noopener noreferrer"
             class="footer-project__about shake">instagram</a>
-
         {% else %}
-
-        <a href="{{site.baseurl}}/projects/about/" alt="about" class="footer-project__about shake">about</a>
+        <a href="{{ '/projects/about/' | relative_url }}" class="footer-project__about shake">about</a>
         {% endif %}
-        <a href="https://www.linkedin.com/in/marina-wilhelm/" alt="linkedin"
+        <a href="https://www.linkedin.com/in/marina-wilhelm/" rel="noopener noreferrer"
             class="footer-project__linkedin shake">linkedin</a>
-        <a href="https://github.com/Arnoldovna" alt="github" class="footer-project__github shake">github</a>
-        <a href="mailto:marina.wilhelm@icloud.com" alt="email" class="footer-project__email shake">email</a>
+        <a href="https://github.com/Arnoldovna" rel="noopener noreferrer" class="footer-project__github shake">github</a>
+        <a href="mailto:marina.wilhelm@icloud.com" class="footer-project__email shake">email</a>
     </div>
-    <span class="footer-project__copyright"></span>
+    <span class="footer-project__copyright">{% include copyright.html %}</span>
 </footer>

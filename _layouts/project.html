@@ -3,14 +3,14 @@ layout: home
 title: projects
 permalink: /projects/
 ---
-<main>
-    <section class='project-line__projectPage' data-aos="fade-in" data-aos-delay="50"
-        data-aos-anchor-placement="top-bottom" style="background-color:{{ page.color }};">
+<main id="main">
+    <section class='project-line__projectPage project-color--{{ page.project }}' data-aos="fade-in" data-aos-delay="50"
+        data-aos-anchor-placement="top-bottom">
         <div class='project-line__projectPage-header'>
-            <h2 class='project-line__projectPage-title'>
-                {{ page.title}}
-            </h2>
-            <p class='project-line__projectPage-subline'>{{page.subline}} </p>
+            <h1 class='project-line__projectPage-title'>
+                {{ page.title }}
+            </h1>
+            <p class='project-line__projectPage-subline'>{{ page.subline }}</p>
         </div>
         <div class='project-line__details'>
             <p class='project-line__category'>{{page.category}}</p>
@@ -21,7 +21,7 @@ permalink: /projects/
     <section class='project' data-aos="fade-in" data-aos-delay="100">
         <div data-aos="fade-right" data-aos-delay="100"
             class='{% if page.credits == false %} project__no-display {% else %} project__credits {% endif %}'>
-            <h3 class='project__credits-title'>credits</h3>
+            <h2 class='project__credits-title'>credits</h2>
             <div class='project__details'>
                 {% if page.team %}
                 <div class='project__keys'>Team</div>
@@ -39,10 +39,14 @@ permalink: /projects/
                 <div class='project__keys'>Website</div>
                 <div class='project__values'>{{page.website}}</div>
                 {% endif %}
+                {% if page.code %}
+                <div class='project__keys'>Code</div>
+                <div class='project__values'>{{page.code}}</div>
+                {% endif %}
             </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="200" class='project__introduction'>
-            <h3 class='project__introduction-title'>introductions</h3>
+            <h2 class='project__introduction-title'>introductions</h2>
             <p class='project__introduction-text'>
                 {{page.description}} </p>
         </div>
@@ -57,7 +61,9 @@ permalink: /projects/
                 </div>
             </div>
             <div class='tab__video-container'>
-                <iframe src="{{page.video}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                {% if page.video %}
+                <iframe src="{{ page.video }}" title="{{ page.title | strip_html }}: project video" allow="autoplay; fullscreen" loading="lazy"></iframe>
+                {% endif %}
             </div>
         </div>
     </section>

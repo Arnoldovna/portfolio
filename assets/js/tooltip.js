@@ -1,29 +1,11 @@
-var mawPrintSpan = document.getElementById('maw-print');
-var aboutSpan = document.getElementById('about');
-// var instructSpan = document.getElementById('instruct');
-var grueneSpan = document.getElementById('gruene');
-var lalaSpan = document.getElementById('lala-berlin');
-var parmaSpan = document.getElementById('parma');
-var schrotKornSpan = document.getElementById('schrot-korn');
-var bodyLoomSpan = document.getElementById('body-loom');
+// The project preview image follows the mouse pointer on the overview page.
+// Each row sets its vertical offset via data-tooltip-offset (tall images use a larger one).
+var previews = document.querySelectorAll('.tooltip [data-tooltip-offset]');
 
-window.onmousemove = function (e) {
-    var x = e.clientX,
-        y = e.clientY;
-    aboutSpan.style.top = (y - 150) + 'px';
-    aboutSpan.style.left = (x + 20) + 'px';
-    mawPrintSpan.style.top = (y - 150) + 'px';
-    mawPrintSpan.style.left = (x + 20) + 'px';
-    grueneSpan.style.top = (y - 150) + 'px';
-    grueneSpan.style.left = (x + 20) + 'px';
-    lalaSpan.style.top = (y - 400) + 'px';
-    lalaSpan.style.left = (x + 20) + 'px';
-    parmaSpan.style.top = (y - 150) + 'px';
-    parmaSpan.style.left = (x + 20) + 'px';
-    bodyLoomSpan.style.top = (y - 400) + 'px';
-    bodyLoomSpan.style.left = (x + 20) + 'px';
-    // instructSpan.style.top = (y - 150) + 'px';
-    // instructSpan.style.left = (x + 20) + 'px';
-    schrotKornSpan.style.top = (y - 150) + 'px';
-    schrotKornSpan.style.left = (x + 20) + 'px';
-};
+window.addEventListener('mousemove', function (event) {
+    previews.forEach(function (preview) {
+        var offset = Number(preview.getAttribute('data-tooltip-offset')) || 150;
+        preview.style.top = (event.clientY - offset) + 'px';
+        preview.style.left = (event.clientX + 20) + 'px';
+    });
+});

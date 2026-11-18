@@ -1,12 +1,11 @@
-<nav class='header'>
-    <a class="header__icon" href="{{site.baseurl}}/" alt="MAW Portfolio"></a>
+<nav class='header' aria-label="Main">
+    <a class="header__icon" href="{{ '/' | relative_url }}" aria-label="MAW Portfolio, overview"></a>
     {% if page.title == 'home' %}
-    <a class="header__contact" alt="contact page" href="{{site.baseurl}}/contact">Contact</a>
-    {% else  %}
-    <a class="header__overview" alt="overview page" href="{{site.baseurl}}/">
-        <span class='header__overview-arrow'></span>
+    <a class="header__contact" href="{{ '/contact/' | relative_url }}">Contact</a>
+    {% else %}
+    <a class="header__overview" href="{{ '/' | relative_url }}" aria-label="Back to overview">
+        <span class='header__overview-arrow' aria-hidden="true"></span>
         <span class='header__overview-text'>Overview</span>
-
     </a>
     {% endif %}
 </nav>

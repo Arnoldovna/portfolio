@@ -1,15 +1,16 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="{% if description %}{{ description }} {% else %} {{ site.description }} {% endif %}" />
-    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; frame-src https://player.vimeo.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
-    <title>{% if title %} {{ title }} {% else %} {{ site.title }} {% endif %}</title>
-    <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
-    <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico" />
-    <link rel="author" href="{{ site.baseurl }}" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
+    <title>{% if page.title and page.title != 'home' %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/fonts/schibsted-grotesk-latin-500-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/aos/aos.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>

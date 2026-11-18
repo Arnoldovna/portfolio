@@ -1,27 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 {% include head.html %}
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class='layout'>
         {% include header.html %}
-        {{content}}
-        {% if page.permalink == '/' or page.permalink == '/contact'%}
+        {{ content }}
+        {% if page.permalink == '/' %}
         {% include footer.html %}
         {% else %}
         {% include footer-project.html %}
         {% endif %}
     </div>
-    {% if page.title =='home' %}
-    <script type="text/javascript" src="{{ site.baseurl | prepend: site.url }}/assets/js/tooltip.js"></script>
+    {% if page.title == 'home' %}
+    <script src="{{ '/assets/js/tooltip.js' | relative_url }}"></script>
     {% endif %}
-
-    {% if page.title !='project' %}
-    <script type="text/javascript" src="{{ site.baseurl | prepend: site.url }}/assets/js/transitions.js"></script>
-    {% endif %}
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="{{ '/assets/js/transitions.js' | relative_url }}"></script>
+    <script src="{{ '/assets/aos/aos.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/init.js' | relative_url }}"></script>
 </body>
 
 </html>
