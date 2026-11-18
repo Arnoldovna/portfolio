@@ -1,4 +1,12 @@
---- 
+---
 ---
 
-@import 'index';
+@use "index";
+
+// Accent colour per project, taken from the `color` front matter field.
+// Generated here instead of inline style attributes so the CSP can forbid inline styles.
+{% for project in site.projects %}
+.project-color--{{ project.project }} {
+    background-color: {{ project.color }};
+}
+{% endfor %}

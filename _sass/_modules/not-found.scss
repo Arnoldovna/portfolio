@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+.not-found {
+    margin: $s-2 auto;
+    max-width: 600px;
+    text-align: center;
+
+    &__title {
+        margin: $s-8 0;
+        font-size: 4em;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+}

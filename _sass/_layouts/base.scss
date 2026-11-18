@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -22,6 +25,8 @@ body {
     Helvetica,
     sans-serif;
   font-size: $text-base;
+  // Schibsted Grotesk runs a little wider than the original typeface.
+  letter-spacing: -0.01em;
   margin: 0 auto;
   max-width: $xl;
   -webkit-overflow-scrolling: touch;
@@ -74,4 +79,44 @@ a:active {
 
 img {
   max-width: 100%;
+}
+
+// Keyboard focus: a clear outline only when navigating with the keyboard.
+:focus-visible {
+  outline: 2px solid $black;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  @extend %visuallyhidden;
+  font-family: $medium-font;
+
+  &:focus {
+    position: fixed;
+    top: $s-2;
+    left: $s-2;
+    z-index: 1000;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: $s-2 $s-3;
+    clip: auto;
+    overflow: visible;
+    background: $white;
+    color: $black;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.visually-hidden {
+  @extend %visuallyhidden;
 }

@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 .project-line {
     padding: $s-5 $s-3;
     height: $card;
@@ -114,6 +117,10 @@
         }
     }
 
+    &__projectPage-title {
+        font-size: 1.5rem;
+    }
+
     &__projectPage-subline {
         font-size: 15px;
         padding-top: $s-2;
@@ -128,16 +135,6 @@
 
 .tooltip span {
     display: none;
-}
-
-#maw-print,
-#about,
-#lala-berlin,
-#schrot-korn,
-#gruene,
-#instruct,
-#body-loom,
-#parma {
     visibility: hidden;
 
     @include tablet {
@@ -151,4 +148,10 @@
     position: fixed;
     overflow: hidden;
     z-index: 100;
+}
+// AOS sets `transform: translate3d(0, 0, 0)` on animated elements. A transform turns the row into the
+// containing block of the fixed preview image, so the image would no longer follow the pointer.
+// The rows only fade, so they do not need the transform.
+.tooltip[data-aos^="fade"][data-aos^="fade"].aos-animate {
+    transform: none;
 }

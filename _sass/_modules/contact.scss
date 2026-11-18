@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 .contact {
     margin: $s-8 $s-3;
 
@@ -66,5 +69,14 @@
         font-family: $regular-font;
         font-size: $caption;
         padding-bottom: $s-3
+    }
+
+    &__imprint-text a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        &:hover {
+            color: $grey-underline;
+        }
     }
 }
