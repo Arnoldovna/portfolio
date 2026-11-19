@@ -9,7 +9,8 @@
     <meta name="google" content="notranslate">
     <title>{% if page.title and page.title != 'home' %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
     <link rel="preload" href="{{ '/assets/fonts/schibsted-grotesk-latin-500-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/aos/aos.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
