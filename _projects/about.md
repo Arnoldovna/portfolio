@@ -2,7 +2,6 @@
 layout: project
 n: 1
 credits: false
-img: '/assets/images/see.png'
 project: 'about'
 title: 'About me'
 subline: 'Frontend Developer / Multidisciplinary Designer.'
