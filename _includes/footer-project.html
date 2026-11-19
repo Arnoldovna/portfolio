@@ -1,12 +1,9 @@
 <footer class="footer-project">
     <div class='footer-project__channels'>
         <a href="{{ '/contact/' | relative_url }}" class="footer-project__imprint shake">imprint</a>
-        {% if page.project == 'about' %}
-        <a href="https://www.instagram.com/arnoldovnawilgelm/" rel="noopener noreferrer"
-            class="footer-project__about shake">instagram</a>
-        {% else %}
+        {% unless page.project == 'about' %}
         <a href="{{ '/projects/about/' | relative_url }}" class="footer-project__about shake">about</a>
-        {% endif %}
+        {% endunless %}
         <a href="https://www.linkedin.com/in/marina-wilhelm/" rel="noopener noreferrer"
             class="footer-project__linkedin shake">linkedin</a>
         <a href="https://github.com/Arnoldovna" rel="noopener noreferrer" class="footer-project__github shake">github</a>

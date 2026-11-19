@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 6
+n: 3
 project: 'schrot-korn'
 img: '/assets/images/schrotkorn.png'
 title: 'Schrot & Korn'

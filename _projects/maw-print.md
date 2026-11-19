@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 5
+n: 2
 project: 'maw-print'
 img: '/assets/images/maw-print.png'
 title: 'maw prints'
