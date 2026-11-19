@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 7
+n: 4
 project: 'parma'
 img: '/assets/images/parma.png'
 title: 'Parma 2020 Styleguide'

@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 10
+n: 7
 project: 'body-loom'
 img: '/assets/images/body1.png'
 title: 'Body Loom System'

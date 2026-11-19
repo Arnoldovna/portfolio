@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 9
+n: 6
 project: 'lala-berlin'
 img: '/assets/images/lala.png'
 title: 'lala Berlin'

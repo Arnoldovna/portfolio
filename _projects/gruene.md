@@ -1,6 +1,6 @@
 ---
 layout: project
-n: 8
+n: 5
 project: 'gruene'
 img: '/assets/images/gruene.png'
 title: 'Die Grünen / Bündnis `90'
